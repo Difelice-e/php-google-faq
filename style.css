@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
 }
@@ -18,8 +20,7 @@ img {
 }
 
 header {
-    position: sticky;
-    padding: 0 15px 0 15px;
+    padding: 15px;
 }
 
 .main-header {
@@ -53,20 +54,24 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid green;
     overflow: hidden;
 }
 
 .navbar-link {
     display: flex;
     gap: 25px;
-    padding-bottom: 10px;
     padding-left: 0;
     border-bottom: 1px solid grey;
     list-style: none;
 }
 
-.active {
+.navbar-link li {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.navbar-link li:hover, li.active {
     color: blue;
     border-bottom: 2px solid blue;
 }
@@ -78,4 +83,25 @@ h3 {
 
 p {
     padding: 15px 0;
+}
+
+footer {
+    background-color: lightgrey;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+#language {
+    width: 150px;
 }

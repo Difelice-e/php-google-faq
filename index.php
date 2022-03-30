@@ -127,8 +127,22 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container footer-container">
             <!-- qui va il footer  -->
+            <div>
+              <ul>
+                <li>Google</li>
+                <li>Tutto su Google</li>
+                <li>Privacy</li>
+                <li>Termini</li>
+              </ul>
+            </div>
+
+            <div>
+              <select name="language" id="language">
+                <option value="Italiano">Italiano</option>
+              </select>
+            </div>
         </div>
     </footer>
 </body>
