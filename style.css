@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-after {
+    font-size: 20px;
+    color: rgb(58, 58, 58);
+}
+
+.user-tab {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-tab i {
+    font-size: 22px;
+}
+
+.user-img-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid red;
+    overflow: hidden;
+}

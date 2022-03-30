@@ -84,9 +84,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
+        <div class="main-header">
+            <div class="logo-wrapper">
+                <img class="logo" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+                <span class="logo-after">Privacy e termini</span>
+            </div>
+
+            <div class="user-tab">
+                <i class="fa-solid fa-grip"></i>
+                <div class="user-img-wrapper">
+                    <img src="img/ccccc.png" alt="">
+                </div>
+            </div>
+        </div>
         <nav>
             <!-- qua va la navigazione  -->
         </nav>
@@ -94,7 +108,14 @@
 
     <main>
         <div class="container">
-            <!-- qui vanno le faq  -->
+            <?php
+            foreach ($faq as $value){
+            ?>
+                <h3 class="faq"><?php echo $value['faq'] ?></h3>
+            <?php
+                echo $value['answer'];
+            }
+            ?>
         </div>
     </main>
 
