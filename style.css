@@ -19,6 +19,7 @@ img {
 
 header {
     position: sticky;
+    padding: 0 15px 0 15px;
 }
 
 .main-header {
@@ -54,4 +55,27 @@ header {
     border-radius: 50%;
     border: 2px solid red;
     overflow: hidden;
+}
+
+.navbar-link {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    border-bottom: 1px solid grey;
+    list-style: none;
+}
+
+.active {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+h3 {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+p {
+    padding: 15px 0;
 }
